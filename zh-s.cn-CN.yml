@@ -2,7 +2,7 @@
 en:
   activerecord:
     models:
-      answer: Answer
+      answer: 回答
       certificate: 证书
       certificate_template: 证书模板
       feature: 特征
@@ -34,15 +34,15 @@ en:
       groups:
         name: 名称
       items:
-        attachment: 依恋
+        attachment: 附件
       path:
         banner: 封面图片
         background_image: 背景图
-        free: 自由
+        free: 免费
         subscription: 订阅
         one-time: 一度
       tenants:
-        subdomain: 子域
+        subdomain: 子域名
         password: 密码
       themes:
         brand_logo: 品牌标志
@@ -74,7 +74,7 @@ en:
         details: 细节
       edit_payment:
         billing_mode: 计费方式
-        edit_payment: 编辑付款
+        edit_payment: 修改付款
         currency_hint: "您正在使用 ％{name} (%{code} ) 作为您的默认货币。"
         change_currency: "更改货币"
       update:
@@ -99,13 +99,13 @@ en:
           title: 或分享此链接
         expenditures: 支出
         lesson:
-          zero: 课
-          one: 课
-          other: 教训
+          zero: 课程
+          one: 课程
+          other: 课程
         last_viewed: "最后查看："
       change_role:
         one_admin: "您至少需要一名管理员。"
-        admin_limit: "您已达到管理员限制。 考虑在 Admin > Billing 升级您的计划。"
+        admin_limit: "您已达到管理员限制。 考虑在 管理员 > 计费方式 升级您的计划。"
         not_valid: "这不是一个有效的角色。"
       helper:
         active: "积极的"
@@ -140,7 +140,7 @@ en:
         destroyed: "组已成功删除。"
     certificate_templates:
       index:
-        issue_config: 问题配置
+        issue_config: 发布设置
         issued: 发布
         manual: 手动的
         automatic: 自动的
@@ -154,18 +154,18 @@ en:
         subtitle_html: "编辑课程证书<strong>%{course} </strong>。"
         change_logo: "更改徽标"
         upload_logo: "上传标志"
-        file_recommendations: "我们建议使用具有透明度的 PNG 文件。 最大尺寸：1200 x 600 像素。"
+        file_recommendations: "我们建议使用具有透明背景的 PNG 文件。 最大尺寸：1200 x 600 像素。"
         change_signature: "更改签名"
         upload_signature: "上传签名"
         automatic_hint: "如果您将此设置为自动，则将在学习者达到要颁发的最低级别后颁发证书，您可以在下面进行设置。"
     layouts:
       application:
         workspace: 回到学院
-        marble_academy: "💎\udc8e 大理石学院"
-        help_center: "📚\udcda 帮助中心"
-        facebook: "👍\udc4d脸书群组"
-        feature_request: "👾\udc7e 功能要求"
-        contact_support: "💬\udcac 联系支持"
+        marble_academy: "💎 大理石学院"
+        help_center: "📚 帮助中心"
+        facebook: "👍\ 脸书群组"
+        feature_request: "👾 功能要求"
+        contact_support: "💬\ 联系支持"
     questions:
       show:
         col:
@@ -183,7 +183,7 @@ en:
         includes: 计划包括
         current: 当前计划
         unlimited: 无限
-        unlimited_learners: 无限学习者
+        unlimited_learners: 无限学员
         unlimited_creators: 无限创作者
         unlimited_drafts: 无限草稿课程
         analytics: 高级分析
@@ -193,10 +193,10 @@ en:
         features_included: 所有计划中包含的功能
         alert_premium: 您的计划提供两个学院。 如果您想创建第二个，请通过 <a href="mailto:support@marbleteams.com">support@marbleteams.com</a> 与我们联系。
         topic1: 私立/公立学院
-        topic2: "微学习：一口大小的课程创建者"
+        topic2: "微学习：微课程创建者"
         topic3: 公共、限制和隐藏课程
         topic4: 测验
-        topic5: 自定义域
+        topic5: 自定义域名
         topic6: 电子邮件邀请/链接邀请
         topic7: 嵌入小部件
         topic8: 定制品牌
@@ -224,7 +224,7 @@ en:
         name_placeholder: 输入您的团队或公司名称
         welcome_subtitle: 次要欢迎信息
         welcome_title: 主要欢迎信息
-        whitelabel: 白色标签
+        whitelabel: 自定义品牌
         whitelabel_checkbox: 删除“Powered by Marble”签名
         design_title: 设计
         design_subtitle: 更新您的品牌徽标、背景图片和学院中使用的颜色。
@@ -243,7 +243,7 @@ en:
         text_html:
           "您的学院将在 % 可用{url}以及您在此处选择的<span class='font-weight-bold'>自定义域</span>："
         dns_checks_info: "这些是自动生成的 CNAME 记录，用于设置您的自定义域。 将它们复制并粘贴到您域的 DNS 记录中："
-        title: 自定义域
+        title: 自定义域名
         learn_more_html: <a href='https://academy.marble.so'>了解更多如何启用自定义域</a>
         dns_set_correctly: DNS 设置 - CNAME 设置正确。
         dns_not_set_correctly: DNS 设置 - CNAME 设置不正确。
@@ -258,7 +258,7 @@ en:
         regenerate: "重新生成密钥"
       language:
         submit: 保存语言
-        label: 语
+        label: 语言
         subtitle: 更改整个学院的语言。
       currency:
         instructions: 更改所有课程的默认货币。 #translate
@@ -267,30 +267,30 @@ en:
         modal:
           form:
             open:
-              label1: 打开
+              label1: 开放的
               label2: 任何知道链接的人都可以注册到学院。
             private:
               label1: 私人的
               label2: 只有受邀加入学院的人才能访问它。
             public:
-              label1: 上市
+              label1: 公共的
               label2: 任何知道链接的人都可以查看该学院及其课程。
           title: 更改访问策略
         subtitle: 更改访问策略
         text: 您可以更改此学院的<strong>访问政策</strong>，目前为 <strong>%{value} </strong>。
         title: 危险区
         notification:
-          open: 打开
+          open: 开放的
           private: 私人的
-          public: 上市
+          public: 公共的
           subtitle: 在 Slack 中获取通知
           text:
             当发布课程或添加课程时，MarbleBot 将通过 Slack 通知您。
           title: 通知
       settings_navigation:
         brand: "品牌"
-        domain: "领域"
-        language: "语"
+        domain: "域名"
+        language: "语言"
         access_policy: "访问策略"
       update:
         updated: "学院更新成功。"
@@ -342,15 +342,15 @@ en:
         destroyed: "标记已成功删除。"
     integrations:
       index:
-        stripe_description: "将您的 Stripe 帐户集成到您的学院，并开始向新学习者销售您的课程。"
+        stripe_description: "将您的 Stripe 帐户连接到您的学院，并开始向新学习者销售您的课程。"
         mailchimp_description: "每当有人注册到您的学院时，都会自动创建一个新的 Mailchimp 联系人。"
         intercom_description: "每当有人注册到您的学院时，都会自动创建新的对讲联系人。"
         hubspot_description: "每当有人注册到您的学院时，都会自动创建新的 Hubspot 联系人。"
   errors:
     messages:
       not_saved:
-        one: "1 个错误禁止此 %{resource}从被拯救："
-        other: "%{count}错误禁止此 %{resource}从被拯救："
+        one: "1 个错误禁止被 %{resource}拯救："
+        other: "%{count}错误禁止被 %{resource}拯救："
   payments:
     show:
       purchase_confirmation: 购买确认
@@ -415,10 +415,10 @@ en:
     myitem:
       answer: 查看答案
       back: "回到："
-      complete: 完全的
-      completed: 完全的
-      contents: 教训
-      feedback: 它怎么样？
+      complete: 完成
+      completed: 完成的
+      contents: 课程
+      feedback: 课程如何？
       feedback_text: 你刚刚完成
       link: 访问链接
       mark_finished: 标记完成
@@ -465,7 +465,7 @@ en:
       sign_in: 登入
       workspace_name: 学院名称
       workspace_url: 学院网址
-      subject: "[大理石] 来自 % 的通知{tenant}"
+      subject: "[大理石学院] 来自 % 的通知{tenant}"
   paths:
     shared:
       choose_file: 选择一个文件
@@ -581,7 +581,7 @@ en:
       needs_author: "您必须是作者才能编辑此路径。"
       needs_author_preview: "您必须是作者才能预览此路径。"
     index:
-      assigned: 分配给我
+      assigned: 分配给我的
     review:
       all_learners: 所有学习者
       assign_users: 分配用户
@@ -772,7 +772,7 @@ en:
     cancel: 取消
     close: 关闭
     delete: 删除
-    destroy: 破坏
+    destroy: 抹除
     edit: 编辑
     new: 新的
     remove: 消除
@@ -809,8 +809,8 @@ en:
       one: 学院
       other: 学院
     academies: 学院
-    group: 团体
-    groups: 团体
+    group: 小组 
+    groups: 小组
     tag: 标签
     tags: 标签
     view: 看法
@@ -839,8 +839,8 @@ en:
     admins: 管理员
     creator: 创造者
     creators: 创作者
-    learner: 学习者
-    learners: 学习者
+    learner: 学员
+    learners: 学员
     certificate: 证书
     certificates: 证书
     question: 问题
@@ -866,7 +866,7 @@ en:
       recaptcha: "reCAPTCHA 授权失败。 请再试一次。"
     confirmation:
       welcome: "欢迎来到大理石！ 您的电子邮件已被确认。 请登录访问更多内容。"
-      tenant_doesnt_exist: "对不起。 租户不存在。"
+      tenant_doesnt_exist: "对不起。 用户不存在。"
   certificate_mailer:
     send_certificate:
       subject: "恭喜 %{user} , 你已经完成了你的 %{path}课程！"
@@ -926,7 +926,7 @@ en:
     appsumo_welcome:
       subject: "注册确认"
     welcome_message:
-      subject: "欢迎来到大理石！"
+      subject: "欢迎来到Marble！"
   certificate_templates:
     validations:
       limit_mb: "大于 5MB"
@@ -976,13 +976,13 @@ en:
     distance_in_words:
       half_a_minute: "半分钟"
       less_than_x_seconds:
-        one: "不到 1 秒"
+        one: "少于 1 秒"
         other: "少于 ％{count}秒"
       x_seconds:
         one: "1秒"
         other: "%{count}秒"
       less_than_x_minutes:
-        one: "不到一分钟"
+        one: "不到1分钟"
         other: "少于 ％{count}分钟"
       x_minutes:
         one: "1分钟"
