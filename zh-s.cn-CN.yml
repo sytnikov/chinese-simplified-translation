@@ -1,0 +1,1030 @@
+---
+en:
+  activerecord:
+    models:
+      answer: Answer
+      certificate: 证书
+      certificate_template: 证书模板
+      feature: 特征
+      goal: 目标
+      group: 团体
+      integration: 一体化
+      item: 课
+      option: 选项
+      path: 课程
+      payment: 支付
+      plan: 计划
+      question: 问题
+      skill: 标签
+      tenant: 学院
+      theme: 主题
+      user: 用户
+    attributes:
+      certificate:
+        date_issued: 发行日期
+        status: 地位
+      certificate_template:
+        course_description: 课程说明
+        brand_logo: 品牌标志
+        signature: 签名
+        printed_name: "印刷名称"
+        printed_position: "印刷位置"
+        minimum_level: "发行的最低级别"
+        automatically_issued: "自动发出"
+      groups:
+        name: 名称
+      items:
+        attachment: 依恋
+      path:
+        banner: 封面图片
+        background_image: 背景图
+        free: 自由
+        subscription: 订阅
+        one-time: 一度
+      tenants:
+        subdomain: 子域
+        password: 密码
+      themes:
+        brand_logo: 品牌标志
+        background_image: 背景图
+        course_background: 课程背景
+      user:
+        avatar: 头像
+  admin:
+    welcome:
+      index:
+        total_views: 总浏览
+        lesson_title: 课名
+        in_minutes: "（以分钟为单位）"
+    paths:
+      certificates_tab:
+        completed: 已完成的课程
+        status: 证书状态
+        issued: 发布
+        pending: 待办的
+        automatic: 自动地
+        canceled: 取消
+        pdf: 以 PDF 格式查看
+        cancel: 取消
+        issue: 问题
+        no_certificate: 尚未创建证书模板。
+        create_template: 创建模板
+      users_tab:
+        completed: 已完成的课程
+        details: 细节
+      edit_payment:
+        billing_mode: 计费方式
+        edit_payment: 编辑付款
+        currency_hint: "您正在使用 ％{name} (%{code} ) 作为您的默认货币。"
+        change_currency: "更改货币"
+      update:
+        updated: "课程已成功更新。"
+        error: "抱歉，更新时出了点问题。"
+      destroy:
+        destroyed: "课程被成功摧毁。"
+      sales:
+        active_subscriber: "活跃订阅者"
+        active_subscribers: "活跃订阅者"
+    users:
+      index:
+        banner_button: 更改访问策略
+        banner_title: 想让用户自己注册？
+        invite:
+          button: 邀请用户
+          email: 电子邮件地址
+          name: 名称
+          title: 邀请新用户
+        sharelink:
+          button: 复制
+          title: 或分享此链接
+        expenditures: 支出
+        lesson:
+          zero: 课
+          one: 课
+          other: 教训
+        last_viewed: "最后查看："
+      change_role:
+        one_admin: "您至少需要一名管理员。"
+        admin_limit: "您已达到管理员限制。 考虑在 Admin > Billing 升级您的计划。"
+        not_valid: "这不是一个有效的角色。"
+      helper:
+        active: "积极的"
+        invitated: "邀请待定"
+    items:
+      completed: 完全的
+      destroy:
+        destroyed: "课程已成功删除。"
+    groups:
+      index:
+        members: 会员
+        member: 成员
+        new: 新组
+        edit: 编辑组
+        modal_form_name: 名称
+        modal_form_users_label: 添加用户
+        modal_form_users_placeholder: 选择用户
+        modal_title: 创建一个新组
+      show:
+        action:
+          remove: 从群组中移除
+        col_name: 名称
+        modal_form_name_placeholder: 名称
+        modal_form_users_label: 添加用户
+        modal_form_users_placeholder: 选择用户
+        modal_title: 更新组
+      create:
+        created: "组已成功创建。"
+      update:
+        updated: "组已成功更新。"
+      destroy:
+        destroyed: "组已成功删除。"
+    certificate_templates:
+      index:
+        issue_config: 问题配置
+        issued: 发布
+        manual: 手动的
+        automatic: 自动的
+        template: 模板
+        not_created: 尚未创建
+        edit: 编辑模板
+        create: 创建模板
+      update:
+        updated: "证书模板已成功更新。"
+      edit:
+        subtitle_html: "编辑课程证书<strong>%{course} </strong>。"
+        change_logo: "更改徽标"
+        upload_logo: "上传标志"
+        file_recommendations: "我们建议使用具有透明度的 PNG 文件。 最大尺寸：1200 x 600 像素。"
+        change_signature: "更改签名"
+        upload_signature: "上传签名"
+        automatic_hint: "如果您将此设置为自动，则将在学习者达到要颁发的最低级别后颁发证书，您可以在下面进行设置。"
+    layouts:
+      application:
+        workspace: 回到学院
+        marble_academy: "💎\udc8e 大理石学院"
+        help_center: "📚\udcda 帮助中心"
+        facebook: "👍\udc4d脸书群组"
+        feature_request: "👾\udc7e 功能要求"
+        contact_support: "💬\udcac 联系支持"
+    questions:
+      show:
+        col:
+          attempts: 尝试
+          correct: 正确的
+          name: 名称
+        completed: 完全的
+        title: 标题
+      destroy:
+        destroyed: "问题已成功删除。"
+    plans:
+      index:
+        manage: 管理您的计划
+        lifetime: 终身访问
+        includes: 计划包括
+        current: 当前计划
+        unlimited: 无限
+        unlimited_learners: 无限学习者
+        unlimited_creators: 无限创作者
+        unlimited_drafts: 无限草稿课程
+        analytics: 高级分析
+        features: 查看所有功能
+        upgrade: 升级计划
+        quote: 获取报价
+        features_included: 所有计划中包含的功能
+        alert_premium: 您的计划提供两个学院。 如果您想创建第二个，请通过 <a href="mailto:support@marbleteams.com">support@marbleteams.com</a> 与我们联系。
+        topic1: 私立/公立学院
+        topic2: "微学习：一口大小的课程创建者"
+        topic3: 公共、限制和隐藏课程
+        topic4: 测验
+        topic5: 自定义域
+        topic6: 电子邮件邀请/链接邀请
+        topic7: 嵌入小部件
+        topic8: 定制品牌
+        topic9: 证书
+        topic10: 团体
+        topic11: 多种语言
+        topic12: 所有课程在一个地方/课程视图
+        topic13: 用户资料
+        topic14: 克隆课程
+        topic15: 课程合作者
+        manage_subscription: "管理订阅"
+        unlimited_academies: "无限学院"
+        unlimited_active_courses: "无限活跃课程"
+        active_courses: "活动课程"
+        custom_plan_offer: "没有找到理想的计划？ 联系我们，以便我们为您定制。"
+        expires_at: "到期时间为 %{date}"
+      payment_confirmed: "付款已确认，您的新计划已经可用。 这意味着您可以立即开始使用所有功能。"
+      hope_you_enjoy: "我们希望您喜欢您的体验，并且您可以使用 Marble 来利用您的业务并吸引您的客户。 如有需要，请随时与我们联系以获得支持。"
+      lets_start: "开始吧！"
+      error_restart: "您可以重新启动该过程以订阅该计划。"
+      error_customer_portal: "抱歉，我们在连接您的 Stripe 帐户时遇到问题。 请联系我们的支持"
+    tenants:
+      edit:
+        name: 学院名称
+        name_placeholder: 输入您的团队或公司名称
+        welcome_subtitle: 次要欢迎信息
+        welcome_title: 主要欢迎信息
+        whitelabel: 白色标签
+        whitelabel_checkbox: 删除“Powered by Marble”签名
+        design_title: 设计
+        design_subtitle: 更新您的品牌徽标、背景图片和学院中使用的颜色。
+        brand_instructions: "最大尺寸：2000 x 700 像素"
+        brand_logo: 品牌标志
+        favicon_logo: 图标标志
+        save_logo: 保存徽标
+        save_favicon_logo: 保存网站图标徽标
+        go_to_themes: 进入主题设置
+      domain:
+        form:
+          placeholder: 示例.yourdomain.tld
+          submit: 保存自定义域
+          subtext: '请按照自定义域结构 mysubdomain.mydomain.myTLD 输入您的自定义（子）域。 示例：academy.icandoanything.com。 您的域将自动受到 SSL 的保护。 DNS 更改最多可能需要 24 小时才能反映出来。'
+        subtitle: 为您的学院设置自定义域
+        text_html:
+          "您的学院将在 % 可用{url}以及您在此处选择的<span class='font-weight-bold'>自定义域</span>："
+        dns_checks_info: "这些是自动生成的 CNAME 记录，用于设置您的自定义域。 将它们复制并粘贴到您域的 DNS 记录中："
+        title: 自定义域
+        learn_more_html: <a href='https://academy.marble.so'>了解更多如何启用自定义域</a>
+        dns_set_correctly: DNS 设置 - CNAME 设置正确。
+        dns_not_set_correctly: DNS 设置 - CNAME 设置不正确。
+        custom_domain_published: 已发布 - 新域可访问。
+        custom_domain_not_published: 未发布 - 新域不可访问。
+      sso:
+        sso_login_url: "单点登录网址"
+        sso_logout_url: "SSO 注销 URL"
+        activate_sso: "激活单点登录"
+        sso_secret: "单点登录"
+        generate: "生成密钥"
+        regenerate: "重新生成密钥"
+      language:
+        submit: 保存语言
+        label: 语
+        subtitle: 更改整个学院的语言。
+      currency:
+        instructions: 更改所有课程的默认货币。 #translate
+      access_policy:
+        action: 更改访问权限
+        modal:
+          form:
+            open:
+              label1: 打开
+              label2: 任何知道链接的人都可以注册到学院。
+            private:
+              label1: 私人的
+              label2: 只有受邀加入学院的人才能访问它。
+            public:
+              label1: 上市
+              label2: 任何知道链接的人都可以查看该学院及其课程。
+          title: 更改访问策略
+        subtitle: 更改访问策略
+        text: 您可以更改此学院的<strong>访问政策</strong>，目前为 <strong>%{value} </strong>。
+        title: 危险区
+        notification:
+          open: 打开
+          private: 私人的
+          public: 上市
+          subtitle: 在 Slack 中获取通知
+          text:
+            当发布课程或添加课程时，MarbleBot 将通过 Slack 通知您。
+          title: 通知
+      settings_navigation:
+        brand: "品牌"
+        domain: "领域"
+        language: "语"
+        access_policy: "访问策略"
+      update:
+        updated: "学院更新成功。"
+        new_currency: "您已设置新的默认货币。 现在，您可以转到“销售”页面为每门课程设置价格和计费选项。"
+      change_favicon:
+        updated: "Favicon 已成功更新。"
+        not_updated: "网站图标无法更新。"
+      remove_favicon:
+        deleted: "Favicon 删除成功。"
+    themes:
+      background_image: 背景图
+      bg_instructions: "最大尺寸：3000 x 1000 像素"
+      brand_instructions: "最大尺寸：500 x 175 像素"
+      brand_logo: 品牌标志
+      button_color: 按钮颜色
+      button_text_color: 按钮文字颜色
+      colors: 颜色
+      colors_subtitle: 请选择你学院的主色调。
+      course_background: 课程背景
+      course_background_image: 课程背景图片
+      course_body_text_color: 课程正文颜色
+      course_design: 课程设计
+      course_design_subtitle: 课程设计副标题
+      delete_image:
+        not_deleted: "抱歉，我们无法删除此图片。"
+      go_to: 进入主题设置
+      images: 图片
+      images_subtitle: 自定义您学院中显示的图像。
+      name: 主题名称
+      navbar_color: 主导航栏颜色
+      navbar_text_color: 主导航栏文字颜色
+      save: 保存新主题
+      title: 主题设置
+      title_color: 主页上的标题颜色
+      create:
+        updated: "主题已成功更新。"
+      destroy:
+        destroyed: "主题被成功销毁。"
+    certificates:
+      create:
+        created: "证书已创建。"
+        error: "创建证书时出错。"
+      view_pdf:
+        title: "结业证书"
+        was_awarded: "被授予 %{date}到"
+        for_completing: "完成课程"
+    tags:
+      destroy:
+        destroyed: "标记已成功删除。"
+    integrations:
+      index:
+        stripe_description: "将您的 Stripe 帐户集成到您的学院，并开始向新学习者销售您的课程。"
+        mailchimp_description: "每当有人注册到您的学院时，都会自动创建一个新的 Mailchimp 联系人。"
+        intercom_description: "每当有人注册到您的学院时，都会自动创建新的对讲联系人。"
+        hubspot_description: "每当有人注册到您的学院时，都会自动创建新的 Hubspot 联系人。"
+  errors:
+    messages:
+      not_saved:
+        one: "1 个错误禁止此 %{resource}从被拯救："
+        other: "%{count}错误禁止此 %{resource}从被拯救："
+  payments:
+    show:
+      purchase_confirmation: 购买确认
+      confirmation:
+        title: 你的新旅程现在开始！
+        payment_confirmed_html: 付款已确认，您的新课程已经可用。 这意味着你可以 <a href='%{link} '>立即开始学习</a>。
+        learning_metrics_html: 你也可以 <a href='%{link} '>在您的个人资料页面上了解您的学习指标</a>。
+        lets_start: "开始吧！"
+      error:
+        title: 哎呀！
+        something_wrong: 您的付款有问题。 请检查提供的信息是否正确。
+        restart: 您可以再次重新启动该过程以访问课程。
+        go_to_payment: 转到付款
+    cancel_subscription:
+      canceled: "您的订阅已取消。"
+      error: "出了点问题，我们无法取消您的订阅。"
+    purchase_confirmation: "购买确认"
+    create:
+      unable_to_proceed: "无法继续。 学院与支付系统断开连接。 请联系支持。"
+  items:
+    update: 更新课程
+    edit: 编辑课程
+    delete: 删除课程
+    add: 添加课程
+    create:
+      created: "课程已成功创建。"
+    save: 保存课程
+    add_question: 添加问题
+    choose_file: 选择一个文件
+    item_code: 代码
+    file_size: "（最大 10MB）"
+    enter_tag: 输入标签
+    uploaded: 当前上传
+    nolink_text: 没有链接？ 上传一个文件
+    edit_path_item_advanced:
+      choose_lesson: 选择课程类型
+      website_description: 任何链接的卡片
+      video_description: 沉浸式视频集成
+      pdf_description: 上传或链接到文件
+      text_description: 带样式的长格式文本
+      embed_description: 嵌入您喜欢的任何内容
+      quiz_description: 给予者明确的选择
+      title_goes_here: "标题在这里"
+      description_goes_here: "描述在这里"
+      learn_more: "详细了解如何创建课程"
+      content: "内容"
+      not_saved: "%{error}禁止保存此项目："
+      paste_or_type: "粘贴或键入链接"
+      learn: "学到更多"
+      pdf_link_html: "通过链接添加<span class='font-weight-bold'>PDF</span>："
+      pdf_explanation_html: "PDF 只能以 <span class='font-italic'>'.pdf'</span> 结尾的链接显示。 对于其他 PDF，请使用下面的上传。"
+      video_explanation_html: "使用来自 <span class='font-weight-bold'>YouTube</span>、<span class='font-weight-bold'>Vimeo</span>、<span class='font-weight-bold' 的视频>Wistia</span>、<span class='font-weight-bold'>Loom</span> 和许多其他视频托管平台。"
+      embed_content_html: "<span class='font-weight-bold'>通过链接</span>嵌入内容："
+      embed_explanation_html: "从您喜欢的工具（例如 Miro、Trello 或 Figma）输入有效的<span class='font-weight-bold'>iframe</span> 或<span class='font-weight-bold'>嵌入代码</span> ."
+      upload_pdf_html: "或从您的计算机<span class='font-weight-bold'>上传 PDF</span> 文件："
+      about_questions: "关于如何添加您的问题。"
+    index:
+      all: 全部
+      reset: 重启
+      tag: 选择一个标签
+      create: "添加新课程"
+    myitem:
+      answer: 查看答案
+      back: "回到："
+      complete: 完全的
+      completed: 完全的
+      contents: 教训
+      feedback: 它怎么样？
+      feedback_text: 你刚刚完成
+      link: 访问链接
+      mark_finished: 标记完成
+      next: 接下来
+      next_lesson: 继续下一课
+      start_next_lesson: 开始下一课
+      to_path: 返回课程
+    new:
+      title: 新课
+    new_path_item:
+      add_existing_content: 添加现有课程
+      add_items_text: 找课
+      add_items_title: 选择要添加的课程
+      add_new_content: 添加新课程
+      add_question: 添加问题
+      question_text: 您可以在创建课程后添加问题。
+    show:
+      link: 访问链接
+    myitem_show:
+      needs_sign_in: "您需要先登录或注册才能继续。"
+      not_enrolled: "尚未注册此路径。"
+    create_advanced:
+      updated: "课程已成功更新。"
+    _configuration_navbar:
+      all_courses: "所有课程"
+      publish: "发布"
+  layouts:
+    _navbar:
+      account_question: 有一个账户？
+      admin_settings: 管理员设置
+      create_path: 创建课程
+      design: 设计
+      invite_users: 邀请用户
+      my_profile: 我的简历
+      my_settings: 我的设置
+      support: 支持
+      templates: 模板
+      upgrade_plan: "升级计划！"
+    _navbar_tenants:
+      account_question: 有一个账户？
+  notification_mailer:
+    new_path_notification:
+      email: 电子邮件
+      sign_in: 登入
+      workspace_name: 学院名称
+      workspace_url: 学院网址
+      subject: "[大理石] 来自 % 的通知{tenant}"
+  paths:
+    shared:
+      choose_file: 选择一个文件
+      file_size: "（最大 10MB）"
+      item_tags_text: 输入标签
+      nolink_text: 没有链接？ 上传一个文件
+      enter_url: 输入网址
+      enter_emails: 在此处输入电子邮件
+      start_date: 开始日期
+      end_date: 结束日期
+      draft: 草稿
+      publish: 发布
+      previous: 以前的
+      start: 开始
+      resume: 恢复
+      no_notifications: 没有通知
+      notifications: 通知
+      now_button: 现在
+      privacy: 隐私
+      anyone_with_link: 任何有链接的人
+      anyone_with_link_text_2: 互联网上的任何人都可以查看此课程。
+      restricted: 受限制的
+      restricted_text: 只有指定的学习者才能打开本课程。
+      privacy_text: 设置本课程的隐私。
+      public_text: 学院内的任何人都可以查看此课程。
+      available: 可用的
+      expired: 已到期
+      edit_path: 编辑课程
+      subscribe: 订阅
+      subscribe_for: 订阅
+      buy_course: 买
+      buy_for: 为...买
+    show_settings:
+      delete_image: 删除图片
+      restore_image: 恢复默认
+    edit_cover_image_modal:
+      restore: 恢复默认
+      label:
+        banner: 封面图片
+        banner_instructions: "最大尺寸：3000 x 1500 像素"
+      title: 更改课程封面图片
+    _edit_path_modal:
+      label:
+        image: 课程背景图片
+        image_instructions: "最大尺寸：3500 x 1100 像素"
+        text_color: 课程名称颜色
+    _existing_items_modal:
+      select_items: 选择课程
+      title: 添加现有课程
+    _modal_add_content:
+      add_existing_content: 添加现有课程
+      add_new_content: 添加新课程
+      choose_items: 选择要添加的课程
+      find_content: 找课
+    _modal_add_question:
+      add_option: 添加选项
+      ask_question: 问一个问题...
+      title: 多项选择题
+    _modal_edit_item:
+      title: 编辑课程
+    _modal_edit_question:
+      add_option: 添加选项
+      title: 编辑问题
+    _modal_path_settings:
+      # Part of the strings from this page are linked to the paths/edit
+      assign_groups: 分配组
+      assign_groups_text: 您还可以分配以前在管理环境中创建的学习者组。
+      currently_in: 您目前处于 %{timezone}时间
+      design_description: 设计
+      design_title: 更改学习者模式的布局
+      find_learners: 寻找学习者
+      find_groups: 查找组
+      only_assigned: 仅指定成员
+      path_collaboration: 课程合作
+      path_collaboration_text: 允许学习者在本课程中添加课程。
+      person_space: 你学院里的人。 仅在特定时间段内。
+    _new_item_modal:
+      title: 添加新课程
+    _path:
+      change_cover: 更换封面
+      edit_path: 编辑课程
+      items:
+        one: "%{count}课"
+        other: "%{count}教训"
+      view_path: 查看课程
+    _paths_list:
+      create_first_path: 创建您的第一门课程
+      no_paths: 这里还没有课程。
+    edit:
+      add_content: 添加课程
+      all_learners: 所有学习者
+      assign_learners: 分配学习者
+      assign_learners_text:
+        您可以指定单个学习者，他们将能够查看课程并收到有关课程的通知。
+      change_name: 更换名字
+      change_timezone: 在此处更改您的时区
+      currently_in: 您目前在
+      form_title: 表格包含
+      group_path_title: 小组课程设置
+      noend: 没有结束
+      notifications_text: 您的学习者将收到有关此课程的通知。
+      only_assigned: 仅指定成员
+      path_collaboration: 课程合作
+      path_collaboration_text: 允许学习者在本课程中添加课程。
+      person_space: 你学院里的人。
+      schedule_path: 安排课程
+      schedule_path_text_1: 课程通常始终可供您的学院使用。
+      schedule_path_text_2:
+        使用此设置，您可以将课程安排为仅在特定时间段内可用。
+      sending_notification: 您将向
+      title_1: 添加课程
+      title_2: 小组课程设置
+      needs_author: "您必须是作者才能编辑此路径。"
+      needs_author_preview: "您必须是作者才能预览此路径。"
+    index:
+      assigned: 分配给我
+    review:
+      all_learners: 所有学习者
+      assign_users: 分配用户
+      assign_users_text:
+        您可以指定能够查看课程并收到有关课程通知的个人用户。
+      change_timezone: 在此处更改您的时区
+      currently_in: 您目前在
+      find_learners: 寻找学习者
+      form_title: 表格包含
+      notifications_text: 您的学习者将收到有关此课程的通知。
+      only_assigned: 仅指定成员
+      open-ended: 开放式
+      person_space: 人
+      save_draft: 保存为草稿
+      schedule_path: 安排课程
+      schedule_path_text_1: 课程通常始终可供您的学院使用。
+      schedule_path_text_2:
+        使用此设置，您可以将课程安排为仅在特定时间段内可用。
+      sending_notification: 您将向
+      title: 配置课程
+    preview:
+      edit: 编辑课程
+    show:
+      add_item: 添加至少一课
+      course_details: 课程详情
+      edit: 编辑
+      enter_emails: 在此处输入电子邮件
+      invitations_sent: 邀请发送至
+      invite: 邀请
+      invite_learners: 邀请学习者
+      invite_learners_text: 学习者将被邀请并分配到本课程。
+      learners: 学习者。
+      no_items: 还没有课程。
+      path_published: 课程已成功发布。
+      send_invitations: 发送邀请
+      not_published: "该课程尚未发布。"
+    show_share:
+      sharelink:
+        button: 复制
+        title: 分享这个链接
+    templates:
+      create_template: 从模板创建
+      title: 模板
+      view_original: 查看原始课程
+    create_from_template:
+      created: "课程已从模板成功创建。"
+    restore_default_image:
+      not_deleted: "我们无法删除背景图像。"
+    publish:
+      published: "课程已成功发布。"
+      limit: "您已达到计划的限制。 考虑在管理 > 结算中升级您的帐户。"
+    update:
+      updated: "课程已成功更新。"
+      settings_changed: "课程设置已成功更改。"
+    add_existing_items:
+      added: "项目已成功添加。"
+    remove_item:
+      removed: "课程已成功从课程中删除。"
+      not_removed: "课程必须至少包含一节课。"
+    update_cover:
+      error: "更新封面时出错。"
+    invite_user: "学习者被成功邀请！"
+    validations:
+      limit_mb: "大于 5MB"
+  questions:
+    shared:
+      correct: 正确答案！
+      incorrect: 不正确！
+      correct_text: "正确答案是选项："
+      multiple: 多项选择题
+      submit: 提交
+      answer: 检查正确答案
+      created: "问题已成功创建。"
+      deleted: "问题已成功删除。"
+    _option_fields:
+      option: 选项
+      answer: 检查答案
+    _question_form:
+      add_option: 添加选项
+      ask_question: 问一个问题...
+      save_options: 保存选项
+    _view_question:
+      title: 测验问题
+    modal_failure:
+      try_again: 你可以再试一次！
+  profiles:
+    shared:
+      email: 输入电子邮件地址
+      locale: 语
+      name: 输入你的名字
+      position: 输入您的位置
+    _profile_navigation:
+      overview: 概述
+    updated: "用户已成功更新。"
+  users:
+    shared:
+      password: 密码
+      new_password: 新密码
+      confirm_new_password: 确认新密码
+      confirm_password: 确认密码
+      enter_name: 输入你的名字
+      enter_password: 输入您的密码
+      password_confirmation: 再次输入密码
+      password_reset: 重设密码
+      enter_email: 输入你的电子邮箱地址
+      remember: 记得我
+      password_text: 您的密码长度应至少为 6 个字符（并包含数字和特殊字符以提高安全性）
+      _links:
+        forgot: 忘记密码了吗？
+    profiles:
+      certificates:
+        no_certificate: 您还没有任何已颁发的证书。
+        date_issue: 签发日期
+        view_pdf: 以 PDF 格式查看
+      items:
+        no_lessons: 您还没有可用的课程。
+      paths:
+        no_courses: 您还没有可用的课程。
+      billing:
+        no_billing: 还没有任何订单或付款。
+      show:
+        overview: 概述
+        progress: 学习进步
+        stats: 个人统计
+    invitations:
+      edit:
+        consent_text_html: 继续，即表示您同意我们的 %{terms} .
+        submit_button: 保存我的密码
+        subtitle_html:
+          您将使用您的电子邮件地址 (<strong>%{email} </strong>) 和密码，用于在 Marble 上登录您的学院。
+        title: 加入 ％{tenant}
+    mailer:
+      invitation_instructions:
+        body_html:
+          已邀请您加入学院<strong>%{tenant} </strong>。 立即加入开始学习！
+        cta: 现在加入
+        title: 加入 ％{tenant}在大理石上
+      reset_password_instructions:
+        body:
+          "您告诉我们您忘记了密码。 如果您真的这样做了，请单击此处选择一个新的："
+        cta: 选择新密码
+        hint: "“选择新密码”按钮不起作用？"
+        hint2: "只需将此链接复制并粘贴到浏览器中即可："
+        no_reset:
+          如果您不是有意重置密码，则可以忽略此电子邮件；您的密码不会更改。
+        title: 重置您的密码
+    passwords:
+      edit:
+        submit_button: 修改我的密码
+        subtitle_html:
+          输入您的 Marble 帐户的新密码以登录 <strong>%{tenant} </strong>。
+      new:
+        reset_link: 获取重置链接
+        subtitle_html:
+          要重置密码，请输入您用于登录的电子邮件地址 <strong>%{tenant} </strong>。
+    registrations:
+      new:
+        terms_button: 服务条款
+        terms_html: 继续，即表示您同意我们的 %{link} .
+        title: 注册 %{tenant}
+    sessions:
+      new:
+        title: 登录到 ％{tenant}
+    validations:
+      limit_mb: "大于 5MB"
+  welcome:
+    _modal_new_path:
+      label:
+        items: 选课
+      placeholder:
+        select_items: 选择课程
+      title: 创建新课程
+    home:
+      my_paths: 我的课程
+      other_paths: 其他课程
+      welcome: 欢迎来到 ％{tenant}的学院
+    signin:
+      continue: 继续
+      label: 输入您的学院网址
+      placeholder: 你的团队网址
+      title: 登录您的学院
+    create: "欢迎来到您的新空间！ 请登录以开始使用它。"
+    find_team:
+      not_found: "找不到学院。"
+      enter_name: "请输入空间名称。"
+  global:
+    back: 后退
+    cancel: 取消
+    close: 关闭
+    delete: 删除
+    destroy: 破坏
+    edit: 编辑
+    new: 新的
+    remove: 消除
+    create: 创建
+    add: 添加
+    share: 分享
+    save: 保存
+    search: 搜索
+    save_changes: 保存更改
+    sign_in: 登入
+    sign_up: 注册
+    sign_out: 登出
+    sure: 你确定吗？
+    active: 积极的
+    inactive: 不活动
+    update: 更新
+    save_pdf: 上传和保存PDF文件
+    admin: 行政
+    name: 名称
+    title: 标题
+    description: 描述
+    summary: 概括
+    url: 网址
+    email: 电子邮件
+    details: 细节
+    course: 课程
+    courses: 培训班
+    lesson: 课
+    lessons: 教训
+    user: 用户
+    users: 用户
+    academy:
+      zero: 学院
+      one: 学院
+      other: 学院
+    academies: 学院
+    group: 团体
+    groups: 团体
+    tag: 标签
+    tags: 标签
+    view: 看法
+    views: 观看次数
+    date: 日期
+    "yes": "是的"
+    "no": "不"
+    min: 分钟
+    h: H
+    s: 秒
+    ago: 前
+    day: 日
+    week: 星期
+    month: 月
+    year: 年
+    analytics: 分析
+    time_spent: 所花费的时间
+    last_seen: 最后一次露面
+    completed: 完全的
+    completion: 完成
+    satisfaction: 满足
+    avg_satisfaction: 平均 满足
+    actions: 行动
+    dashboard: 仪表板
+    role: 角色
+    admins: 管理员
+    creator: 创造者
+    creators: 创作者
+    learner: 学习者
+    learners: 学习者
+    certificate: 证书
+    certificates: 证书
+    question: 问题
+    questions: 问题
+    settings: 设置
+    billing: 计费
+    sales: 销售量
+    price: 价格
+    revenue: 收入
+    integration: 一体化
+    integrations: 集成
+    currency: 货币
+    sso: "单点登录"
+    certificate_template: "证书模板"
+    hi: "你好"
+    all_rights_reserved: "版权所有"
+    thanks: "谢谢"
+    ceo_and_founder: "Marble 的 CEO 和创始人"
+  certificates:
+    issue_automatic_certificate: "恭喜，您获得了新证书！ 您可以从您的个人资料页面查看和下载它。"
+  tenants:
+    create:
+      recaptcha: "reCAPTCHA 授权失败。 请再试一次。"
+    confirmation:
+      welcome: "欢迎来到大理石！ 您的电子邮件已被确认。 请登录访问更多内容。"
+      tenant_doesnt_exist: "对不起。 租户不存在。"
+  certificate_mailer:
+    send_certificate:
+      subject: "恭喜 %{user} , 你已经完成了你的 %{path}课程！"
+      preheader: "你有一个新的证书！"
+      congratulations_html: "我们要祝贺你完成你的 <strong>%{path} </strong> 课程在 %{tenant}的学院。"
+      you_can_view_html: "您可以在 % 查看和下载您的证书{href} ."
+      view_certificate: "查看证书"
+      share_html: "最后，不要忘记与您的网络<strong>分享您的成就</strong>！"
+  payment_mailer:
+    send_payment_confirmation:
+      subject: "%{user} ，您的付款已确认！"
+      preheader: "您的付款已确认！"
+      subscription_paid_html: "我们刚刚收到您对课程的订阅付款<strong>%{path} </strong>，仍然可用 %{tenant}的学院。"
+      track_metrics: "跟踪您的学习指标"
+      you_can_track_html: "你也可以 ％{href}并在您的个人资料页面上管理付款和订阅。"
+      resume_course: "恢复课程"
+      course_paid_html: "我们刚刚收到您的课程付款<strong>%{path} </strong>，已在 % 上可用{tenant}的学院。"
+      start_learning: "开始学习"
+    send_cancellation_confirmation:
+      canceled: "您的订阅已取消。"
+      confirmation_message_html: "这是您取消订阅课程的确认消息<strong>%{path} </strong>。"
+      you_can_still_html: "你仍然可以 %{href1} , %{href2} ， 和 ％{href3}在您的个人资料页面上。"
+      href1_text: "跟踪您的学习指标"
+      href2_text: "查看和下载您的证书"
+      href3_text: "管理付款和订阅"
+  plan_mailer:
+    reminder_3_days:
+      subject: "您的试用期将在 3 天后到期"
+    reminder_last_day:
+      subject: "%{user} ，我们有你的计划！"
+    hope_you_liked: "我们希望您喜欢 Marble 的体验。"
+    hope_you_are_enjoying: "我们希望您喜欢我们的体验！"
+    with_marble_html: "使用 <strong>Marble</strong>，只需几分钟，您就可以在您的白标主题学院中构建时尚的课程。 您可以将其用于营销、客户培训、入职培训和任何其他教育目的。"
+    choose_plan_in_3_html: "由于您现在使用的是学院的试用版，因此您需要<strong>在 3 天内选择一个计划</strong>才能继续。"
+    choose_plan: "选择一个计划"
+    if_any_questions: "如果您有任何问题，只需点击此电子邮件的回复即可。"
+    tomorrow_last_day_html: "明天是<strong>试用期的最后一天</strong>。 但是，如果您想继续为您的客户建立令人惊叹的学院，我们有满足您需求的计划！"
+    acquisition:
+      subject: "恭喜！ 您购买了 Marble 计划。"
+      congratulations: "恭喜！ 您已从 Marble 购买了计划。 我们希望我们的合作伙伴关系将为您的业务带来丰硕的成果。"
+    start_using: "建立你的学院！"
+    cancellation:
+      subject: "您的 Marble 计划已取消。"
+      first: "这是您的 Marble 计划取消的确认消息。"
+      feedback: "请让我们知道我们是否可以做些什么来增强您与我们的体验 - 您可以回答这封电子邮件。"
+    renovation:
+      subject: "我们已收到您的付款。"
+      payment_received: "用于您的计划翻新的付款，用于 %{academy}学院，确认。"
+    keep_using: "去你的学院"
+    update:
+      subject: "你的学院刚刚更新。"
+      confirmation: "这 ％{academy}学院刚刚更新到 %{plan}计划。 我们希望您喜欢我们的体验。"
+      anything_else: "如果您需要任何其他信息或有任何疑问，请回复此电子邮件。"
+  tenant_mailer:
+    registration_confirmation:
+      subject: "注册确认"
+    appsumo_welcome:
+      subject: "注册确认"
+    welcome_message:
+      subject: "欢迎来到大理石！"
+  certificate_templates:
+    validations:
+      limit_mb: "大于 5MB"
+      limit_px: "大于 1200 x 600 像素"
+  themes:
+    validations:
+      limit_mb: "大于 5MB"
+      limit_px1: "大于 2000 x 700 像素"
+      limit_px2: "大于 3000 x 1000 像素"
+  payment:
+    currencies:
+      usd: "美元 (USD)"
+      eur: "欧元 (EUR)"
+      aud: "澳元 (AUD)"
+      gbp: "英镑 (GBP)"
+      bgn: "保加利亚列弗 (BGN)"
+      cad: "加元 (CAD)"
+      cny: "中国人民币 (CNY)"
+      hrk: "克罗地亚库纳 (HRK)"
+      czk: "捷克克朗 (CZK)"
+      dkk: "丹麦克朗 (DKK)"
+      hkd: "港元 (HKD)"
+      huf: "匈牙利福林 (HUF)"
+      isk: "冰岛克朗 (ISK)"
+      inr: "印度卢比 (INR)"
+      idr: "印尼盾 (IDR)"
+      ils: "以色列谢克尔 (ILS)"
+      jpy: "日元 (JPY)"
+      php: "菲律宾比索 (PHP)"
+      mxn: "墨西哥比索 (MXN)"
+      myr: "马来西亚林吉特 (MYR)"
+      nzd: "新西兰元 (NZD)"
+      nok: "挪威克朗 (NOK)"
+      ron: "罗马尼亚列伊 (RON)"
+      rub: "俄罗斯卢布 (RUB)"
+      sgd: "新加坡元 (SGD)"
+      krw: "韩元 (KRW)"
+      sek: "瑞典克朗 (SEK)"
+      thb: "泰铢 (THB)"
+      try: "土耳其里拉 (TRY)"
+      zar: "南非兰特 (ZAR)"
+      brl: "巴西雷亚尔 (BRL)"
+      pln: "波兰兹罗提 (PLN)"
+      chf: "瑞士法郎 (CHF)"
+  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
+  datetime:
+    distance_in_words:
+      half_a_minute: "半分钟"
+      less_than_x_seconds:
+        one: "不到 1 秒"
+        other: "少于 ％{count}秒"
+      x_seconds:
+        one: "1秒"
+        other: "%{count}秒"
+      less_than_x_minutes:
+        one: "不到一分钟"
+        other: "少于 ％{count}分钟"
+      x_minutes:
+        one: "1分钟"
+        other: "%{count}分钟"
+      about_x_hours:
+        one: "约1小时"
+        other: "关于 ％{count}小时"
+      x_days:
+        one: "1天"
+        other: "%{count}天"
+      about_x_months:
+        one: "约 1 个月"
+        other: "关于 ％{count}月"
+      x_months:
+        one: "1个月"
+        other: "%{count}月"
+      about_x_years:
+        one: "大约 1 年"
+        other: "关于 ％{count}年"
+      over_x_years:
+        one: "超过 1 年"
+        other: "超过 ％{count}年"
+      almost_x_years:
+        one: "将近 1 年"
+        other: "几乎 ％{count}年"
+    prompts:
+      year: "年"
+      month: "月"
+      day: "日"
+      hour: "小时"
+      minute: "分钟"
+      second: "秒"
+  pending: "待办的"
+  profile_page: "个人资料页"
+  visit_academy: "参观学院"
+  invitation_mailer:
+    invitation_instructions:
+      someone_invited_you: "%{sender}已邀请您使用 %{tenant}的学院。 使用下面的按钮设置您的帐户并开始使用："
+      action_text: "设置帐户"
+      welcome_aboard: "欢迎登机"
+      if_trouble: "如果您在使用上面的按钮时遇到问题，请将下面的 URL 复制并粘贴到您的网络浏览器中。"
+      mail_subject: "%{sender}邀请你 %{tenant}的学院"
+      contact_support1: "请随时联系我们"
+      contact_support2: "支持团队"
+      contact_support3: "如果您有任何技术问题。 （我们的回复速度很快。）"
