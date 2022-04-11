@@ -1,5 +1,5 @@
 ---
-en:
+zh-CN:
   activerecord:
     models:
       answer: 回答
@@ -234,6 +234,8 @@ en:
         save_logo: 保存徽标
         save_favicon_logo: 保存网站图标徽标
         go_to_themes: 进入主题设置
+        sign_in_text: "Sign in text"
+        sign_up_text: "Sign up text"
       domain:
         form:
           placeholder: 示例.yourdomain.tld
@@ -314,8 +316,7 @@ en:
       course_body_text_color: 课程正文颜色
       course_design: 课程设计
       course_design_subtitle: 课程设计副标题
-      delete_image:
-        not_deleted: "抱歉，我们无法删除此图片。"
+      delete_image: "Delete image"
       go_to: 进入主题设置
       images: 图片
       images_subtitle: 自定义您学院中显示的图像。
@@ -457,8 +458,10 @@ en:
       support: 支持
       templates: 模板
       upgrade_plan: "升级计划！"
+      create_academy: "Create Academy"
     _navbar_tenants:
       account_question: 有一个账户？
+      no_account_question: "No account yet?"
   notification_mailer:
     new_path_notification:
       email: 电子邮件
@@ -498,6 +501,8 @@ en:
       subscribe_for: 订阅
       buy_course: 买
       buy_for: 为...买
+      drafts: "Drafts"
+      anyone_in_academy: "Anyone registered in %{academy_name}"
     show_settings:
       delete_image: 删除图片
       restore_image: 恢复默认
@@ -551,6 +556,7 @@ en:
         one: "%{count}课"
         other: "%{count}教训"
       view_path: 查看课程
+      duplicate: "Duplicate course"
     _paths_list:
       create_first_path: 创建您的第一门课程
       no_paths: 这里还没有课程。
@@ -618,10 +624,13 @@ en:
       path_published: 课程已成功发布。
       send_invitations: 发送邀请
       not_published: "该课程尚未发布。"
+      not_authorized: "Not authorized access."
     show_share:
       sharelink:
         button: 复制
         title: 分享这个链接
+      embed_this_course: "Embed this course"
+      embed_description: "Feel free to change width and height according to your website"
     templates:
       create_template: 从模板创建
       title: 模板
@@ -629,7 +638,7 @@ en:
     create_from_template:
       created: "课程已从模板成功创建。"
     restore_default_image:
-      not_deleted: "我们无法删除背景图像。"
+      not_deleted: "The image couldn't be deleted."
     publish:
       published: "课程已成功发布。"
       limit: "您已达到计划的限制。 考虑在管理 > 结算中升级您的帐户。"
@@ -646,6 +655,12 @@ en:
     invite_user: "学习者被成功邀请！"
     validations:
       limit_mb: "大于 5MB"
+    _edit_cover_image_modal:
+      title: "Change course cover image"
+      label:
+        banner: "Cover image"
+        banner_instructions: "Max size: 3000 x 1500 px"
+      restore: "Restore default image"
   questions:
     shared:
       correct: 正确答案！
@@ -656,6 +671,10 @@ en:
       answer: 检查正确答案
       created: "问题已成功创建。"
       deleted: "问题已成功删除。"
+      survey_feedback: "Your answer is submitted."
+      survey: "survey"
+      quiz: "quiz"
+      answers: "Answers"
     _option_fields:
       option: 选项
       answer: 检查答案
@@ -663,6 +682,7 @@ en:
       add_option: 添加选项
       ask_question: 问一个问题...
       save_options: 保存选项
+      convert_to: "Convert to %{type_of_question}"
     _view_question:
       title: 测验问题
     modal_failure:
@@ -691,6 +711,7 @@ en:
       password_text: 您的密码长度应至少为 6 个字符（并包含数字和特殊字符以提高安全性）
       _links:
         forgot: 忘记密码了吗？
+      choose_password: "Choose a password"
     profiles:
       certificates:
         no_certificate: 您还没有任何已颁发的证书。
@@ -702,6 +723,11 @@ en:
         no_courses: 您还没有可用的课程。
       billing:
         no_billing: 还没有任何订单或付款。
+        renovates_at: "Renovates at"
+        expires_at: "Expires at"
+        canceled_at: "Canceled at"
+        cancel_subscription: "Cancel subscription"
+        proceed_with_cancellation: "If you cancel your subscription, you will have access to the course until %{date}. Do you want to proceed with the cancellation?"
       show:
         overview: 概述
         progress: 学习进步
@@ -768,6 +794,14 @@ en:
       not_found: "找不到学院。"
       enter_name: "请输入空间名称。"
   global:
+    course_plural:
+      zero: Course
+      one: Course
+      other: Courses
+    draft_plural:
+      zero: Draft
+      one: Draft
+      other: Drafts
     back: 后退
     cancel: 取消
     close: 关闭
@@ -809,7 +843,7 @@ en:
       one: 学院
       other: 学院
     academies: 学院
-    group: 小组 
+    group: 小组
     groups: 小组
     tag: 标签
     tags: 标签
@@ -859,6 +893,9 @@ en:
     all_rights_reserved: "版权所有"
     thanks: "谢谢"
     ceo_and_founder: "Marble 的 CEO 和创始人"
+    rename: "Rename"
+    folders: "Collections"
+    visit: "Visit"
   certificates:
     issue_automatic_certificate: "恭喜，您获得了新证书！ 您可以从您的个人资料页面查看和下载它。"
   tenants:
@@ -1028,3 +1065,6 @@ en:
       contact_support1: "请随时联系我们"
       contact_support2: "支持团队"
       contact_support3: "如果您有任何技术问题。 （我们的回复速度很快。）"
+  folders:
+    rename: "Rename folder"
+  not_created: "Not created"
