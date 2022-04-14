@@ -795,13 +795,13 @@ zh-CN:简体中文
       enter_name: "请输入空间名称。"
   global:
     course_plural:
-      zero: Course
-      one: Course
-      other: Courses
+      zero: 0
+      one: 1
+      other: 其他
     draft_plural:
-      zero: Draft
-      one: Draft
-      other: Drafts
+      zero: 0
+      one: 1
+      other: 其他
     back: 后退
     cancel: 取消
     close: 关闭
