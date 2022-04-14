@@ -1,5 +1,5 @@
 ---
-zh-CN:
+zh-CN:简体中文  
   activerecord:
     models:
       answer: 回答
@@ -81,7 +81,7 @@ zh-CN:
         updated: "课程已成功更新。"
         error: "抱歉，更新时出了点问题。"
       destroy:
-        destroyed: "课程被成功摧毁。"
+        destroyed: "课程被成功删除。"
       sales:
         active_subscriber: "活跃订阅者"
         active_subscribers: "活跃订阅者"
@@ -234,8 +234,8 @@ zh-CN:
         save_logo: 保存徽标
         save_favicon_logo: 保存网站图标徽标
         go_to_themes: 进入主题设置
-        sign_in_text: "Sign in text"
-        sign_up_text: "Sign up text"
+        sign_in_text: "登入"
+        sign_up_text: "注册"
       domain:
         form:
           placeholder: 示例.yourdomain.tld
@@ -316,7 +316,7 @@ zh-CN:
       course_body_text_color: 课程正文颜色
       course_design: 课程设计
       course_design_subtitle: 课程设计副标题
-      delete_image: "Delete image"
+      delete_image: "删除图片"
       go_to: 进入主题设置
       images: 图片
       images_subtitle: 自定义您学院中显示的图像。
@@ -458,10 +458,10 @@ zh-CN:
       support: 支持
       templates: 模板
       upgrade_plan: "升级计划！"
-      create_academy: "Create Academy"
+      create_academy: "创建学院"
     _navbar_tenants:
       account_question: 有一个账户？
-      no_account_question: "No account yet?"
+      no_account_question: "还没有账户?"
   notification_mailer:
     new_path_notification:
       email: 电子邮件
@@ -501,8 +501,8 @@ zh-CN:
       subscribe_for: 订阅
       buy_course: 买
       buy_for: 为...买
-      drafts: "Drafts"
-      anyone_in_academy: "Anyone registered in %{academy_name}"
+      drafts: "草稿"
+      anyone_in_academy: "注册的人 %{academy_name}"
     show_settings:
       delete_image: 删除图片
       restore_image: 恢复默认
@@ -556,7 +556,7 @@ zh-CN:
         one: "%{count}课"
         other: "%{count}教训"
       view_path: 查看课程
-      duplicate: "Duplicate course"
+      duplicate: "复制课程"
     _paths_list:
       create_first_path: 创建您的第一门课程
       no_paths: 这里还没有课程。
@@ -624,13 +624,13 @@ zh-CN:
       path_published: 课程已成功发布。
       send_invitations: 发送邀请
       not_published: "该课程尚未发布。"
-      not_authorized: "Not authorized access."
+      not_authorized: "未授权访问。"
     show_share:
       sharelink:
         button: 复制
         title: 分享这个链接
-      embed_this_course: "Embed this course"
-      embed_description: "Feel free to change width and height according to your website"
+      embed_this_course: "嵌入这个课程"
+      embed_description: "请根据你的网站来调整长款尺寸"
     templates:
       create_template: 从模板创建
       title: 模板
@@ -638,7 +638,7 @@ zh-CN:
     create_from_template:
       created: "课程已从模板成功创建。"
     restore_default_image:
-      not_deleted: "The image couldn't be deleted."
+      not_deleted: "图片无法删除"
     publish:
       published: "课程已成功发布。"
       limit: "您已达到计划的限制。 考虑在管理 > 结算中升级您的帐户。"
@@ -655,12 +655,12 @@ zh-CN:
     invite_user: "学习者被成功邀请！"
     validations:
       limit_mb: "大于 5MB"
-    _edit_cover_image_modal:
-      title: "Change course cover image"
+    _edit_cover_image_modal:修改封面图片
+      title: "修改课程封面图片"
       label:
-        banner: "Cover image"
-        banner_instructions: "Max size: 3000 x 1500 px"
-      restore: "Restore default image"
+        banner: "封面图片"
+        banner_instructions: "最大尺寸: 3000 x 1500 px"
+      restore: "换回默认图片"
   questions:
     shared:
       correct: 正确答案！
@@ -671,10 +671,10 @@ zh-CN:
       answer: 检查正确答案
       created: "问题已成功创建。"
       deleted: "问题已成功删除。"
-      survey_feedback: "Your answer is submitted."
-      survey: "survey"
-      quiz: "quiz"
-      answers: "Answers"
+      survey_feedback: "你的答案已提交"
+      survey: "问卷"
+      quiz: "测试题"
+      answers: "答案"
     _option_fields:
       option: 选项
       answer: 检查答案
@@ -682,7 +682,7 @@ zh-CN:
       add_option: 添加选项
       ask_question: 问一个问题...
       save_options: 保存选项
-      convert_to: "Convert to %{type_of_question}"
+      convert_to: "参与 %{type_of_question}"
     _view_question:
       title: 测验问题
     modal_failure:
@@ -711,7 +711,7 @@ zh-CN:
       password_text: 您的密码长度应至少为 6 个字符（并包含数字和特殊字符以提高安全性）
       _links:
         forgot: 忘记密码了吗？
-      choose_password: "Choose a password"
+      choose_password: "选择一个密码"
     profiles:
       certificates:
         no_certificate: 您还没有任何已颁发的证书。
@@ -723,11 +723,11 @@ zh-CN:
         no_courses: 您还没有可用的课程。
       billing:
         no_billing: 还没有任何订单或付款。
-        renovates_at: "Renovates at"
-        expires_at: "Expires at"
-        canceled_at: "Canceled at"
-        cancel_subscription: "Cancel subscription"
-        proceed_with_cancellation: "If you cancel your subscription, you will have access to the course until %{date}. Do you want to proceed with the cancellation?"
+        renovates_at: "更新为"
+        expires_at: "到期日为"
+        canceled_at: "取消于"
+        cancel_subscription: "取消订阅"
+        proceed_with_cancellation: "如果你取消订阅那么你依旧可以参与课程到 %{date}。你是否确认取消订阅?"
       show:
         overview: 概述
         progress: 学习进步
@@ -893,9 +893,9 @@ zh-CN:
     all_rights_reserved: "版权所有"
     thanks: "谢谢"
     ceo_and_founder: "Marble 的 CEO 和创始人"
-    rename: "Rename"
-    folders: "Collections"
-    visit: "Visit"
+    rename: "重命名"
+    folders: "收藏夹"
+    visit: "访问"
   certificates:
     issue_automatic_certificate: "恭喜，您获得了新证书！ 您可以从您的个人资料页面查看和下载它。"
   tenants:
@@ -1066,5 +1066,5 @@ zh-CN:
       contact_support2: "支持团队"
       contact_support3: "如果您有任何技术问题。 （我们的回复速度很快。）"
   folders:
-    rename: "Rename folder"
-  not_created: "Not created"
+    rename: "文件夹重命名"
+  not_created: "不创建"
